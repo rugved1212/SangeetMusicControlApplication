@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/appbar"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+            app:titleMarginStart="30dp"
+            app:logo="@drawable/symbol">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/search"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_above="@+id/space">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/upload_btn"
+                style="@style/floating_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/cardview"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/add"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2.5dp"
+                app:cardCornerRadius="45dp"
+                app:cardBackgroundColor="@color/MatteBlack"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:layout_margin="2.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cardview_image"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@color/white"
+                        android:layout_margin="5dp"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/cardview_name"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:text="MOYE MOYE"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_toEndOf="@id/cardview_image"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/cardview_artist"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:text="Artist: "
+                        android:textColor="@color/white"
+                        android:layout_toEndOf="@id/cardview_image"
+                        android:layout_below="@id/cardview_name"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/cardview_movie"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:text="Movie: "
+                        android:textColor="@color/white"
+                        android:layout_toEndOf="@id/cardview_image"
+                        android:layout_below="@id/cardview_artist"
+                        android:layout_marginTop="3dp"/>
+
+                    <ImageView
+                        android:id="@+id/cardview_playbutton"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/play"
+                        android:layout_marginEnd="25dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

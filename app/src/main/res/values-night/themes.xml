@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ServerSideMusicControl" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="SplashImage">
+        <item name="lottie_rawRes">@raw/music_light</item>
+    </style>
+
+    <style name="Play_Pause">
+        <item name="lottie_rawRes">@raw/play_pause_light</item>
+    </style>
+
+    <style name="background_header">
+        <item name="android:background">#6750a4</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="floating_button">
+        <item name="android:backgroundTint">@color/DarkViolet</item>
+    </style>
+
+    <style name="appbar">
+        <item name="android:background">@color/DarkViolet</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:backgroundTint">@color/DarkViolet</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:shape">rectangle</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="music_list_card">
+        <item name="android:backgroundTint">@color/MatteBlack</item>
+    </style>
+
+    <style name="image">
+        <item name="android:background">@drawable/default_music_background1</item>
+    </style>
+
+</resources>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "500761042926",
+    "firebase_url": "https://sangeet-234a2-default-rtdb.firebaseio.com",
+    "project_id": "sangeet-234a2",
+    "storage_bucket": "sangeet-234a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500761042926:android:2d849479d902fd09f7f8ff",
+        "android_client_info": {
+          "package_name": "com.example.sangeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500761042926-oqb0g6miar7baq6n4r089dvdlm2mmn4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEEl0YnCKROxKT8C4BUUitjadwcewTlBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500761042926-oqb0g6miar7baq6n4r089dvdlm2mmn4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500761042926:android:60218ccecd107e0ef7f8ff",
+        "android_client_info": {
+          "package_name": "com.example.serversidemusiccontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500761042926-oqb0g6miar7baq6n4r089dvdlm2mmn4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEEl0YnCKROxKT8C4BUUitjadwcewTlBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500761042926-oqb0g6miar7baq6n4r089dvdlm2mmn4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

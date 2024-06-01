@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/music"
+        android:title="Music"
+        android:icon="@drawable/musicalnote_dark"/>
+
+    <item
+        android:id="@+id/album"
+        android:title="Album"
+        android:icon="@drawable/default_music_background3"/>
+
+    <item
+        android:id="@+id/playlist"
+        android:title="Playlist"
+        android:icon="@drawable/default_music_background1"/>
+
+</menu>
